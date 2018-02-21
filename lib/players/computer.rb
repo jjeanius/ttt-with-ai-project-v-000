@@ -16,16 +16,21 @@ attr_accessor :player
     end
   end
 
-  def best_move(token)
+  def best_move
+    valid_move 
+  end
+
+  def valid_move
     valid_move << computer_move
-    valid_move.each do |move|
-      move.move == best_move
+    move.each do|input|
+      input.move == valid_move
     end
   end
-
-  def valid_move(board)
-    board.cells = " " && move.between?(1, 9)
-  end
-
-
+  
+  
 end
+
+
+
+
+    
