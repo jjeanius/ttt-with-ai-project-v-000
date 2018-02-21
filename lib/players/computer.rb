@@ -8,7 +8,7 @@ attr_accessor :player
   end
 
   def move(board)
-    if valid_move = 5
+    if valid_move == 5
       "5"
     else
       best_move(board) + 1
