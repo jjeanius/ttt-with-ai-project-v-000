@@ -16,7 +16,7 @@ attr_accessor :player
   end
 
   def next_move
-    win(board) || corner(board) 
+    win(board) || corner(board)
   end
 
   def corner(board)
