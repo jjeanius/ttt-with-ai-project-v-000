@@ -17,12 +17,12 @@ attr_accessor :player
   end
 
   def next_move
-    win(board) || block(board) || corner(board) || randon
+    win(board) || corner(board) || randon
   end
 
   def corner(board)
     [0,2,6,8].detect do|cell|
-      !cell.board.taken?(cell+1)
+      !cell.board.taken?(cell + 1)
     end
   end
 
