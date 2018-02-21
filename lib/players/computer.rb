@@ -16,11 +16,11 @@ attr_accessor :player
   end
 
   def next_move
-    binding.pry
     win(board) || corner(board) || randon
   end
 
   def corner(board)
+    binding.pry
     [0,2,6,8].detect do|cell|
       !cell.board.taken?(cell + 1)
     end
