@@ -18,8 +18,8 @@ attr_accessor :player
   end
 
   def valid_move
-    board.cells = " " && valid_move(1, 9) 
-    
+    board.cells = " " && valid_move(1, 9)
+
 
   end
 
