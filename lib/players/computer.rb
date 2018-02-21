@@ -15,7 +15,7 @@ attr_accessor :player
     end
   end
 
-  def best_move(board)
+  def best_move(token)
     valid_move << computer_move
     valid_move.each do |move|
       move.move == best_move
