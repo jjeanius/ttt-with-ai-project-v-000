@@ -22,6 +22,7 @@ attr_accessor :player
 
   def corner(board)
     [0,2,6,8].detect{|cell|} !board.taken?(cell+1)}
+    end
   end
 
   def winning_combo?(board, token)
