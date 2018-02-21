@@ -18,7 +18,7 @@ attr_accessor :player
     valid_move << computer_move
     valid_move.each do |move|
       move.move == best_move
-
+    end
   end
 
   def valid_move
