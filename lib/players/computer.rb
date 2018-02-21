@@ -22,15 +22,10 @@ attr_accessor :player
 
   def valid_move
     valid_move << computer_move
-    move.each do|input|
+    @cells.each do|input|
       input.move == valid_move
     end
   end
 
 
 end
-
-
-
-
-    
