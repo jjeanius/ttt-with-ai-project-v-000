@@ -8,6 +8,7 @@ attr_accessor :player
   end
 
   def move(board)
+    player_1 = computer
     computer_move = computer.move(board)
     if valid_move? ("1, 9") && valid_move == " "
       move(board, position, current_player)
