@@ -4,12 +4,26 @@ attr_accessor :player
 
   def initialized(token)
     Player.new=self
-    @token
+     @token
   end
 
   def move(board)
-    player_1.move = computer.move
-    computer_move = computer.move(board)
+    if valid_move = 5
+      "5"
+    else
+      best_move(board) + 1
+    end
+
+  def best_move(board)
+  end
+
+
+  end
+
+
+    valid_move << computer_move
+    valid_move.each do |move|
+
 
   end
 
