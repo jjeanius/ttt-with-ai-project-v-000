@@ -8,7 +8,6 @@ attr_accessor :player
   end
 
   def move(board)
-    binding.pry
     if !board.taken?("5")
       "5"
     else
