@@ -13,6 +13,7 @@ attr_accessor :player
     else
       best_move(board) + 1
     end
+  end
 
   def best_move(board)
     valid_move << computer_move
@@ -23,8 +24,6 @@ attr_accessor :player
 
   def valid_move
     board.cells = " " && valid_move.between?(1, 9)
-
-
   end
 
 
