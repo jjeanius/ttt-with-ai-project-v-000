@@ -12,11 +12,11 @@ attr_accessor :player
     if !board.taken?("5")
       "5"
     else
-      good_move(board) + 1
+      next_move(board) + 1
     end
   end
 
-  def good_move
+  def next_move
     win(board) || block(board) || corner(board) || randon
   end
 
