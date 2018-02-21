@@ -28,10 +28,6 @@ attr_accessor :player
   end
 
 
-
-
-  end
-
 end
   #    describe '#move' do
   #      it 'returns a valid position for the computer to move' do
