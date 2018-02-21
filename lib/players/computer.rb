@@ -8,6 +8,7 @@ attr_accessor :player
   end
 
   def move(board)
+    binding.pry
     if valid_move(board) == 5
       "5"
     else
@@ -22,7 +23,7 @@ attr_accessor :player
     end
   end
 
-  def valid_move(board)
+  def valid_move(board)  
     board.cells = " " && move.between?(1, 9)
   end
 
