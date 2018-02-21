@@ -17,7 +17,7 @@ attr_accessor :player
   end
 
   def best_move
-    valid_move 
+    valid_move
   end
 
   def valid_move
@@ -26,8 +26,8 @@ attr_accessor :player
       input.move == valid_move
     end
   end
-  
-  
+
+
 end
 
 
