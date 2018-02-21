@@ -22,7 +22,7 @@ attr_accessor :player
 
   def valid_move
     valid_move << computer_move
-    token.each do|input|
+    moves.each do|input|
       input.move == valid_move
     end
   end
