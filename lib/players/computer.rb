@@ -12,11 +12,11 @@ attr_accessor :player
     if !board.taken?("5")
       "5"
     else
-      best_move(board) + 1
+      good_move(board) + 1
     end
   end
 
-  def best_move
+  def good_move
     win(board) || block(board) || corner(board) || randon
   end
 
@@ -31,5 +31,5 @@ attr_accessor :player
         ((board.cells[combo[0]] == token && board.cells[combo[2]] == token) && !board.taken?(combo[1]+1))
       end
    end
-  
+
 end
