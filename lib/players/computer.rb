@@ -8,8 +8,10 @@ attr_accessor :player
   end
 
   def move(board)
-    position = gets.strip
-    if valid_move? (board, position)
+    binding.pry
+    input = gets.strip
+    computer.move(board) == valid_move
+    if valid_move? ("1, 9") && valid_move == " "
       move(board, position, current_player)
     else
       turn(board)
@@ -17,9 +19,6 @@ attr_accessor :player
   end
 
 end
-  #  computer.move(board) == valid_move
-
-
   #    describe '#move' do
   #      it 'returns a valid position for the computer to move' do
   #        computer = Players::Computer.new("X")
