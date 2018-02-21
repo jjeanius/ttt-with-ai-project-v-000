@@ -10,7 +10,7 @@ attr_accessor :player
   def move(board)
     player_1 = computer
     computer_move = computer.move(board)
-    
+
   end
 
 end
