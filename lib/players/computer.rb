@@ -8,7 +8,6 @@ attr_accessor :player
   end
 
   def move(board)
-    binding.pry
     input = gets.strip
     computer.move(board) == valid_move
     if valid_move? ("1, 9") && valid_move == " "
