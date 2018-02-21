@@ -16,6 +16,7 @@ attr_accessor :player
   end
 
   def next_move
+    binding.pry
     win(board) || corner(board) || randon
   end
 
