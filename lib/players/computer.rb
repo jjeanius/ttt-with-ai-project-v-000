@@ -22,7 +22,7 @@ attr_accessor :player
     end
   end
 
-  def valid_move
+  def valid_move(board)
     board.cells = " " && valid_move.between?(1, 9)
   end
 
