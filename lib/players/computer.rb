@@ -8,7 +8,7 @@ attr_accessor :player
   end
 
   def move(board)
-    player_1 = computer
+    player_1.move = computer.move
     computer_move = computer.move(board)
 
   end
