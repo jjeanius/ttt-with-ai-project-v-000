@@ -17,6 +17,9 @@ attr_accessor :player
   def best_move(board)
   end
 
+  def valid_move
+    board.cells = " " && valid_move(1, 9) 
+    
 
   end
 
